@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NXT Smart Energy Solutions | IoT-Based Prepaid Smart AC Energy Sub-Meter</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="NXT Smart Energy Solutions provides IoT-based prepaid smart AC sub-meters for hostels, PGs, apartments, and offices. Track individual AC electricity usage, automate cost calculation, and end billing disputes.">
+  <meta name="keywords" content="IoT AC sub-meter, prepaid electricity meter, hostel AC billing, PG electricity meter, ESP32 energy monitor, PZEM-004T, smart energy solutions, Wadhwani Foundation">
+  <meta name="author" content="NXT Smart Energy Solutions">
+  
+  <!-- Open Graph / Presentation Tags -->
+  <meta property="og:title" content="NXT Smart Energy Solutions | IoT-Based Prepaid Smart AC Sub-Meter">
+  <meta property="og:description" content="Smart IoT-based AC energy monitoring with prepaid billing and real-time cost tracking. Designed for Hostels, PGs, and Shared Living.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon & Brand Image -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+  <link rel="apple-touch-icon" href="assets/images/logo.jpg">
+  <meta property="og:image" content="assets/images/logo.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo" aria-label="NXT Smart Energy Solutions Home">
+        <img src="assets/images/logo.jpg" alt="NXT Smart Energy Solutions Logo" class="brand-logo-img">
+        <div class="brand-name">
+          <span class="brand-name-main">NXT SMART</span>
+          <span class="brand-name-sub">Energy Solutions</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#problem" class="nav-link">The Problem</a>
+        <a href="#solution" class="nav-link">Our Solution</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#technology" class="nav-link">Technology</a>
+        <a href="#audience" class="nav-link">Who It's For</a>
+        <a href="#calculator" class="nav-link">Calculator</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#about" class="nav-link">About Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Contact Us</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Menu">
+    <a href="#home" class="mobile-nav-link">Home</a>
+    <a href="#problem" class="mobile-nav-link">The Problem</a>
+    <a href="#solution" class="mobile-nav-link">Our Solution</a>
+    <a href="#features" class="mobile-nav-link">Features</a>
+    <a href="#how-it-works" class="mobile-nav-link">How It Works</a>
+    <a href="#technology" class="mobile-nav-link">Technology</a>
+    <a href="#audience" class="mobile-nav-link">Who Can Use It</a>
+    <a href="#benefits" class="mobile-nav-link">Key Benefits</a>
+    <a href="#calculator" class="mobile-nav-link">Savings Calculator</a>
+    <a href="#pricing" class="mobile-nav-link">Pricing</a>
+    <a href="#about" class="mobile-nav-link">About Us</a>
+    <a href="#contact" class="mobile-nav-link">Contact Us</a>
+    <div style="margin-top: 1rem;">
+      <a href="#contact" class="btn btn-primary" style="width: 100%;">Get In Touch</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 1: HOME (HERO)
+         ========================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Copy -->
+          <div class="hero-content">
+            <div class="badge">
+              <span class="badge-dot"></span>
+              IoT Innovation for Energy Fairness
+            </div>
+
+            <h1 class="hero-headline">
+              Make AC Electricity Billing <span class="text-gradient">Simple and Fair.</span>
+            </h1>
+
+            <p class="hero-subheading">
+              Smart IoT-based AC energy monitoring with prepaid billing and real-time cost tracking.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#solution" class="btn btn-primary btn-lg">
+                Explore Our Solution
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary btn-lg">Contact Us</a>
+              <button id="btn-open-pitch-deck" class="btn btn-secondary btn-sm" style="margin-top: 0.2rem;" title="View summary tailored for Wadhwani Foundation & Investors">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                Investor & Mentor Brief
+              </button>
+            </div>
+
+            <div class="hero-highlights">
+              <div class="highlight-item">
+                <svg class="highlight-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Zero Billing Disputes</span>
+              </div>
+              <div class="highlight-item">
+                <svg class="highlight-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <span>Room-Level Sub-Metering</span>
+              </div>
+              <div class="highlight-item">
+                <svg class="highlight-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+                <span>Prepaid Balance Cut-off</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual: Interactive Sub-Meter Device Simulation -->
+          <div class="hero-visual-wrapper">
+            <div class="iot-device-mockup">
+              
+              <!-- Hardware Enclosure Bar -->
+              <div class="mockup-header">
+                <div class="mockup-branding">
+                  <img src="assets/images/logo.jpg" alt="NXT Logo" style="width: 26px; height: 26px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--electric-blue); box-shadow: 0 0 8px rgba(0, 212, 255, 0.4);">
+                  <span class="mockup-brand-title">NXT-SUBMETER // UNIT-104</span>
+                </div>
+                <div class="device-status-badge">
+                  <span class="live-dot"></span>
+                  <span id="sim-ac-status-text">AC Running</span>
+                </div>
+              </div>
+
+              <!-- Embedded TFT Display Screen -->
+              <div class="tft-screen">
+                <div class="tft-topbar">
+                  <span>ESP32 // PZEM-004T</span>
+                  <span class="tft-network">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                      <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                      <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                      <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                    </svg>
+                    IoT CONNECTED
+                  </span>
+                </div>
+
+                <div class="tft-main-balance">
+                  <div class="tft-label">REMAINING PREPAID BALANCE</div>
+                  <div class="tft-value-balance" id="tft-balance-val">₹284.50</div>
+                  <div class="tft-sub-rate">Rate: ₹9.00 / kWh | Tariff: Commercial Shared</div>
+                </div>
+
+                <div class="tft-metrics-grid">
+                  <div class="tft-metric-box">
+                    <div class="tft-metric-title">VOLTAGE</div>
+                    <div class="tft-metric-val"><span id="tft-voltage-val">231.4</span> <span class="tft-metric-unit">V</span></div>
+                  </div>
+                  <div class="tft-metric-box">
+                    <div class="tft-metric-title">CURRENT</div>
+                    <div class="tft-metric-val"><span id="tft-current-val">6.20</span> <span class="tft-metric-unit">A</span></div>
+                  </div>
+                  <div class="tft-metric-box">
+                    <div class="tft-metric-title">ACTIVE POWER</div>
+                    <div class="tft-metric-val"><span id="tft-power-val">1.43</span> <span class="tft-metric-unit">kW</span></div>
+                  </div>
+                  <div class="tft-metric-box">
+                    <div class="tft-metric-title">ENERGY USED</div>
+                    <div class="tft-metric-val"><span id="tft-energy-val">48.65</span> <span class="tft-metric-unit">kWh</span></div>
+                  </div>
+                </div>
+
+                <div class="tft-footer-status">
+                  <span id="tft-relay-status" class="relay-status-tag">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg> RELAY: ON (CLOSED)
+                  </span>
+                  <span style="color: var(--text-dim); font-size: 0.68rem;">ROOM 104 • 1.5T AC</span>
+                </div>
+              </div>
+
+              <!-- Interactive Simulator Action Bar -->
+              <div class="mockup-simulator-actions">
+                <div class="sim-btn-row">
+                  <button id="btn-toggle-ac" class="sim-btn" type="button">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="8" x2="12" y2="12"></line>
+                    </svg>
+                    Turn AC OFF
+                  </button>
+                  <button id="btn-sim-recharge" class="sim-btn" type="button">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Recharge Balance
+                  </button>
+                </div>
+                <p class="sim-disclaimer">
+                  <strong>Demonstration Data:</strong> Interactive simulation for demonstration purposes only. Not connected to live hardware.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: THE PROBLEM
+         ========================================================================== -->
+    <section id="problem" class="section-dark">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">The Challenge</div>
+          <h2 class="section-title">The Shared Electricity Dilemma</h2>
+          <p class="section-subtitle">
+            Hostels and PGs often use one main electricity meter for multiple AC rooms. This makes it difficult to calculate each room’s electricity usage and can cause billing confusion, disputes, and electricity wastage.
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <!-- Problem Card 1 -->
+          <div class="card problem-card">
+            <div class="problem-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3>Single Master Meter Dilemma</h3>
+            <p>
+              When 15 to 50 air conditioners run on a single utility meter, building managers cannot identify who consumed how many units of electricity.
+            </p>
+            <span class="problem-impact-tag">Unfair Flat-Rate Splitting</span>
+          </div>
+
+          <!-- Problem Card 2 -->
+          <div class="card problem-card">
+            <div class="problem-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3>Frequent Billing Disputes</h3>
+            <p>
+              Tenants who use their AC for 2 hours a day are forced to pay the same electricity bill as tenants who run theirs 18 hours daily, leading to constant friction.
+            </p>
+            <span class="problem-impact-tag">Tenant & Warden Arguments</span>
+          </div>
+
+          <!-- Problem Card 3 -->
+          <div class="card problem-card">
+            <div class="problem-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
+                <line x1="12" y1="2" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3>Rampant Electricity Wastage</h3>
+            <p>
+              Without individual accountability, ACs are routinely left on while rooms are empty, driving electricity bills to exorbitant commercial slabs.
+            </p>
+            <span class="problem-impact-tag">20% to 30% Power Wasted</span>
+          </div>
+        </div>
+
+        <!-- Comparative Breakdown -->
+        <div class="comparison-box">
+          <div class="comp-col-bad">
+            <h4>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson-red)" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="15" y1="9" x2="9" y2="15"></line>
+                <line x1="9" y1="9" x2="15" y2="15"></line>
+              </svg>
+              Conventional Shared Meter
+            </h4>
+            <ul class="comp-list">
+              <li>
+                <span class="icon-cross">✕</span>
+                <span>One lump-sum utility bill split equally among all rooms</span>
+              </li>
+              <li>
+                <span class="icon-cross">✕</span>
+                <span>Zero visibility into individual AC kilowatt-hour usage</span>
+              </li>
+              <li>
+                <span class="icon-cross">✕</span>
+                <span>High risk of unpaid bills and delayed tenant deposits</span>
+              </li>
+              <li>
+                <span class="icon-cross">✕</span>
+                <span>Tenants leave AC running continuously with no consequences</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="comp-col-good">
+            <h4>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--electric-blue)" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              With NXT Smart Sub-Meter
+            </h4>
+            <ul class="comp-list">
+              <li>
+                <span class="icon-check">✓</span>
+                <span>Every tenant pays strictly for their room's actual AC consumption</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span>Live TFT screen and IoT portal display exact kWh and Rupees</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span>Prepaid billing ensures owners never suffer unpaid power costs</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span>Tenants turn AC off responsibly, lowering total energy consumption</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: OUR SOLUTION
+         ========================================================================== -->
+    <section id="solution">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">The Innovation</div>
+          <h2 class="section-title">Our Solution</h2>
+          <p class="section-subtitle">
+            An IoT-Based Prepaid Smart AC Energy Sub-Meter engineered to track individual AC electricity consumption, calculate exact costs, support prepaid billing, and provide owners with effortless digital monitoring.
+          </p>
+        </div>
+
+        <div class="solution-overview-grid">
+          
+          <!-- Solution Visual Architecture Diagram -->
+          <div class="solution-diagram-card">
+            <svg class="diagram-svg-container" viewBox="0 0 540 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Background Grid Accent -->
+              <rect x="10" y="10" width="520" height="360" rx="16" fill="#080e1f" stroke="#172554" stroke-width="1.5"/>
+              
+              <!-- AC Load Node -->
+              <g transform="translate(40, 50)">
+                <rect width="110" height="60" rx="8" fill="#0e1b38" stroke="#3b82f6" stroke-width="1.5"/>
+                <text x="55" y="28" fill="#f8fafc" font-size="11" font-weight="700" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">ROOM AC UNIT</text>
+                <text x="55" y="44" fill="#94a3b8" font-size="9" text-anchor="middle" font-family="'JetBrains Mono', monospace">1.0T - 2.0T LOAD</text>
+              </g>
+
+              <!-- Connection 1 -->
+              <line x1="150" y1="80" x2="210" y2="80" stroke="#00d4ff" stroke-width="2" stroke-dasharray="4 4"/>
+              
+              <!-- PZEM & CT Sensor Node -->
+              <g transform="translate(210, 50)">
+                <rect width="120" height="60" rx="8" fill="#0e1b38" stroke="#00d4ff" stroke-width="1.5"/>
+                <text x="60" y="28" fill="#00d4ff" font-size="11" font-weight="700" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">PZEM-004T SENSOR</text>
+                <text x="60" y="44" fill="#94a3b8" font-size="9" text-anchor="middle" font-family="'JetBrains Mono', monospace">V, I, kW, kWh</text>
+              </g>
+
+              <!-- Connection 2 -->
+              <line x1="330" y1="80" x2="390" y2="80" stroke="#00d4ff" stroke-width="2"/>
+              <polygon points="385,76 395,80 385,84" fill="#00d4ff"/>
+
+              <!-- ESP32 Controller Center -->
+              <g transform="translate(390, 50)">
+                <rect width="110" height="60" rx="8" fill="#00d4ff" fill-opacity="0.12" stroke="#00d4ff" stroke-width="2"/>
+                <text x="55" y="28" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">ESP32 CORE</text>
+                <text x="55" y="44" fill="#00d4ff" font-size="9" text-anchor="middle" font-family="'JetBrains Mono', monospace">Wi-Fi + Logic</text>
+              </g>
+
+              <!-- Connection Downward to Relay -->
+              <path d="M445 110 V 160 H 150 V 210" stroke="#00d4ff" stroke-width="2" fill="none"/>
+              <polygon points="146,205 150,215 154,205" fill="#00d4ff"/>
+
+              <!-- Smart Cut-off Relay -->
+              <g transform="translate(90, 215)">
+                <rect width="120" height="60" rx="8" fill="#0e1b38" stroke="#10b981" stroke-width="1.5"/>
+                <text x="60" y="28" fill="#10b981" font-size="11" font-weight="700" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">SMART RELAY</text>
+                <text x="60" y="44" fill="#94a3b8" font-size="9" text-anchor="middle" font-family="'JetBrains Mono', monospace">Auto Cut-off</text>
+              </g>
+
+              <!-- TFT Display Node -->
+              <g transform="translate(240, 215)">
+                <rect width="120" height="60" rx="8" fill="#060b18" stroke="#00d4ff" stroke-width="1.5"/>
+                <text x="60" y="26" fill="#00d4ff" font-size="10" font-weight="700" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">TFT COLOR LCD</text>
+                <text x="60" y="42" fill="#f8fafc" font-size="9" text-anchor="middle" font-family="'JetBrains Mono', monospace">₹ Remaining</text>
+              </g>
+
+              <!-- Cloud IoT Dashboard Node -->
+              <g transform="translate(390, 215)">
+                <rect width="110" height="60" rx="8" fill="#0e1b38" stroke="#3b82f6" stroke-width="1.5"/>
+                <text x="55" y="26" fill="#f8fafc" font-size="10" font-weight="700" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">IoT DASHBOARD</text>
+                <text x="55" y="42" fill="#60a5fa" font-size="9" text-anchor="middle" font-family="'JetBrains Mono', monospace">Web & Mobile</text>
+              </g>
+
+              <!-- Data Flows from ESP32 to TFT & Cloud -->
+              <path d="M445 110 V 215" stroke="#3b82f6" stroke-width="2"/>
+              <path d="M410 110 V 170 H 300 V 215" stroke="#00d4ff" stroke-width="2" fill="none"/>
+
+              <!-- Status Banner -->
+              <rect x="40" y="315" width="460" height="34" rx="6" fill="#0a1226" stroke="#1e293b"/>
+              <text x="270" y="337" fill="#94a3b8" font-size="10" text-anchor="middle" font-family="'JetBrains Mono', monospace">
+                SAFE CIRCUIT INTERFACE • INDEPENDENT SUB-METERS PER ROOM
+              </text>
+            </svg>
+          </div>
+
+          <!-- Solution Description Points -->
+          <div class="solution-points-list">
+            <div class="solution-point-item">
+              <div class="solution-point-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="solution-point-content">
+                <h4>Individual AC Circuit Sub-Metering</h4>
+                <p>
+                  Mounted directly on the AC power circuit line of each room to monitor high-draw cooling loads accurately without interfering with standard light/fan wiring.
+                </p>
+              </div>
+            </div>
+
+            <div class="solution-point-item">
+              <div class="solution-point-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <div class="solution-point-content">
+                <h4>Automated Prepaid Deduction</h4>
+                <p>
+                  Tenants purchase prepaid electricity units in advance. As the air conditioner runs, units deduct in real time according to the building's set rate per kWh.
+                </p>
+              </div>
+            </div>
+
+            <div class="solution-point-item">
+              <div class="solution-point-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="solution-point-content">
+                <h4>Dual Display: On-Device TFT & IoT Web</h4>
+                <p>
+                  Tenants see their remaining rupee balance right on the wall screen, while property owners track building-wide energy consumption on a central web interface.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: KEY FEATURES
+         ========================================================================== -->
+    <section id="features" class="section-dark">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">Capabilities</div>
+          <h2 class="section-title">Key Features</h2>
+          <p class="section-subtitle">
+            Engineered specifically to solve AC energy distribution problems with reliable hardware and transparent software.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <!-- Feature 1 -->
+          <div class="card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h3>Real-time AC Energy Monitoring</h3>
+            <p>
+              Measures live voltage, current, active power, and frequency continuously with industrial-grade precision.
+            </p>
+            <span class="feature-badge">Continuous Telemetry</span>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </div>
+            <h3>Individual AC Usage Tracking</h3>
+            <p>
+              Separates high-power AC consumption from general lighting, giving exact room-by-room electricity accountability.
+            </p>
+            <span class="feature-badge">Dedicated Sub-Metering</span>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                <line x1="8" y1="6" x2="16" y2="6"></line>
+                <line x1="16" y1="14" x2="16" y2="18"></line>
+                <path d="M16 10h.01"></path>
+                <path d="M12 10h.01"></path>
+                <path d="M8 10h.01"></path>
+                <path d="M12 14h.01"></path>
+                <path d="M8 14h.01"></path>
+                <path d="M12 18h.01"></path>
+                <path d="M8 18h.01"></path>
+              </svg>
+            </div>
+            <h3>Automatic Cost Calculation</h3>
+            <p>
+              Calculates electricity expenditure instantaneously in Indian Rupees based on configured tariff rates per unit.
+            </p>
+            <span class="feature-badge">Instant Cost Math</span>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                <line x1="1" y1="10" x2="23" y2="10"></line>
+              </svg>
+            </div>
+            <h3>Prepaid Billing System</h3>
+            <p>
+              Supports pay-before-use credit. Eliminates billing collection headaches and overdue electricity liabilities.
+            </p>
+            <span class="feature-badge">Prepaid Protection</span>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>TFT Display for Readings</h3>
+            <p>
+              Mounted on-device color TFT screen provides tenants with instant physical visibility of balance and units used.
+            </p>
+            <span class="feature-badge">Clear On-Device UI</span>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+            <h3>IoT-Based Online Monitoring</h3>
+            <p>
+              Centralized dashboard allows property administrators to oversee multi-room usage and generate audit reports.
+            </p>
+            <span class="feature-badge">Cloud Dashboard</span>
+          </div>
+
+          <!-- Feature 7 -->
+          <div class="card feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+              </svg>
+            </div>
+            <h3>Remote AC Control</h3>
+            <p>
+              Supports safe automated power cut-off when prepaid credits deplete, and instant reconnection once recharged.
+            </p>
+            <span class="feature-badge">Where Safely Supported</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: HOW IT WORKS
+         ========================================================================== -->
+    <section id="how-it-works">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">Operation Workflow</div>
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle">
+            A simple, safe, 5-step operational architecture from electrical connection to intelligent cloud management.
+          </p>
+        </div>
+
+        <div class="steps-container">
+          
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Step 1: Connect the meter to the AC electrical circuit</h3>
+              <p>
+                The NXT sub-meter is securely wired into the dedicated power line supplying the room's air conditioner, ensuring safe isolation.
+              </p>
+              <span class="step-tech-tag">Hardware Installation • Dedicated Line</span>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Step 2: Measure electricity consumption using the energy sensor</h3>
+              <p>
+                The integrated sensor module samples alternating current (AC) and voltage at high frequencies to calculate exact real-time power draw and kilowatt-hours.
+              </p>
+              <span class="step-tech-tag">PZEM-004T Module • Precision Current Transformer</span>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Step 3: Process readings using the ESP32 controller</h3>
+              <p>
+                The onboard dual-core ESP32 microcontroller computes instantaneous costs, deducts units from prepaid credit balance, and manages relay safety logic.
+              </p>
+              <span class="step-tech-tag">ESP32 Core • Edge Computing</span>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Step 4: Display energy usage and estimated cost</h3>
+              <p>
+                The on-device color TFT display refreshes continuously, presenting the tenant with their live balance in Rupees, units used, and power status.
+              </p>
+              <span class="step-tech-tag">Color TFT Display • Room-Level Visibility</span>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="step-card">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h3>Step 5: Let the owner monitor usage through the IoT interface and manage prepaid usage</h3>
+              <p>
+                The building owner views all rooms simultaneously via the IoT web interface, tops up prepaid credits upon payment, and reviews historical usage logs.
+              </p>
+              <span class="step-tech-tag">IoT Cloud Interface • Remote Management</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: TECHNOLOGY USED
+         ========================================================================== -->
+    <section id="technology" class="section-dark">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">Hardware & Software Architecture</div>
+          <h2 class="section-title">Technology Used</h2>
+          <p class="section-subtitle">
+            Built using robust, accessible, and industrial-proven embedded hardware components tailored for Indian electrical conditions.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+          
+          <!-- Tech 1 -->
+          <div class="card tech-card">
+            <div class="tech-header">
+              <div class="tech-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+              <div class="tech-title">
+                <h3>ESP32 Microcontroller</h3>
+                <span>Core Processor</span>
+              </div>
+            </div>
+            <p>
+              High-performance 32-bit dual-core microcontroller with integrated Wi-Fi and Bluetooth. Handles sensor polling, cost calculation algorithms, and secure IoT telemetry.
+            </p>
+            <div class="tech-specs-list">
+              <div class="tech-spec-item">
+                <span>Architecture</span>
+                <span>Xtensa Dual-Core 240MHz</span>
+              </div>
+              <div class="tech-spec-item">
+                <span>Connectivity</span>
+                <span>2.4 GHz Wi-Fi + BLE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech 2 -->
+          <div class="card tech-card">
+            <div class="tech-header">
+              <div class="tech-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                </svg>
+              </div>
+              <div class="tech-title">
+                <h3>PZEM-004T Module</h3>
+                <span>Energy Measurement</span>
+              </div>
+            </div>
+            <p>
+              Specialized electrical parameters measuring module capable of reading voltage (80–260VAC), AC current (up to 100A), active power, power factor, and cumulative energy.
+            </p>
+            <div class="tech-specs-list">
+              <div class="tech-spec-item">
+                <span>Measurement Range</span>
+                <span>80-260V / 0-100A AC</span>
+              </div>
+              <div class="tech-spec-item">
+                <span>Interface</span>
+                <span>TTL Serial UART</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech 3 -->
+          <div class="card tech-card">
+            <div class="tech-header">
+              <div class="tech-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="tech-title">
+                <h3>TFT Display</h3>
+                <span>On-Device Screen</span>
+              </div>
+            </div>
+            <p>
+              Crisp SPI color digital display showing live electrical stats, room identifier, rupee balance, and warning notifications without needing a mobile phone.
+            </p>
+            <div class="tech-specs-list">
+              <div class="tech-spec-item">
+                <span>Display Type</span>
+                <span>Color SPI TFT LCD</span>
+              </div>
+              <div class="tech-spec-item">
+                <span>Interface</span>
+                <span>High-Speed SPI Bus</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech 4 -->
+          <div class="card tech-card">
+            <div class="tech-header">
+              <div class="tech-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
+              <div class="tech-title">
+                <h3>Current Sensor & Relay</h3>
+                <span>Sensing & Cut-off</span>
+              </div>
+            </div>
+            <p>
+              High-precision non-invasive current transformer for safety, coupled with a heavy-duty 30A switching relay designed to safely disconnect power on balance exhaustion.
+            </p>
+            <div class="tech-specs-list">
+              <div class="tech-spec-item">
+                <span>Relay Rating</span>
+                <span>30A 250VAC Switching</span>
+              </div>
+              <div class="tech-spec-item">
+                <span>Safety Isolation</span>
+                <span>Optocoupler Isolated</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech 5 -->
+          <div class="card tech-card">
+            <div class="tech-header">
+              <div class="tech-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 11a9 9 0 0 1 9 9"></path>
+                  <path d="M4 4a16 16 0 0 1 16 16"></path>
+                  <circle cx="5" cy="19" r="1"></circle>
+                </svg>
+              </div>
+              <div class="tech-title">
+                <h3>IoT Monitoring Interface</h3>
+                <span>Cloud & Web Software</span>
+              </div>
+            </div>
+            <p>
+              Secure web-based dashboard and API service for owner administrative controls, room-by-room balance allocation, usage analytics, and alert notifications.
+            </p>
+            <div class="tech-specs-list">
+              <div class="tech-spec-item">
+                <span>Protocol</span>
+                <span>MQTT / HTTP REST</span>
+              </div>
+              <div class="tech-spec-item">
+                <span>Client Support</span>
+                <span>Responsive Web & Mobile</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: WHO CAN USE IT?
+         ========================================================================== -->
+    <section id="audience">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">Target Market</div>
+          <h2 class="section-title">Who Can Use It?</h2>
+          <p class="section-subtitle">
+            Tailored for any multi-room property where AC power consumption needs fair, individual accountability.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          
+          <!-- User 1 -->
+          <div class="card audience-card">
+            <div class="audience-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3>Hostel Owners</h3>
+            <p>
+              Eliminate astronomical lump-sum summer electricity bills and avoid charging unfair flat AC surcharges.
+            </p>
+          </div>
+
+          <!-- User 2 -->
+          <div class="card audience-card">
+            <div class="audience-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>PG Accommodation Owners</h3>
+            <p>
+              Offer transparent AC living rooms with prepaid recharge options that attract budget-conscious tenants.
+            </p>
+          </div>
+
+          <!-- User 3 -->
+          <div class="card audience-card">
+            <div class="audience-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3>Students & Tenants</h3>
+            <p>
+              Pay only for what you personally cool. No more subsidizing roommates or neighbours who run AC all night.
+            </p>
+          </div>
+
+          <!-- User 4 -->
+          <div class="card audience-card">
+            <div class="audience-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <line x1="9" y1="22" x2="9" y2="2"></line>
+              </svg>
+            </div>
+            <h3>Rental Apartments</h3>
+            <p>
+              Perfect for sub-let flats and co-living floors where tenants share a single common electricity connection.
+            </p>
+          </div>
+
+          <!-- User 5 -->
+          <div class="card audience-card">
+            <div class="audience-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3>Small Offices</h3>
+            <p>
+              Ideal for co-working spaces and shared business cabins to meter individual conference room cooling costs.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: BENEFITS
+         ========================================================================== -->
+    <section id="benefits" class="section-dark">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">Value Proposition</div>
+          <h2 class="section-title">Key Benefits</h2>
+          <p class="section-subtitle">
+            Delivering fairness to tenants, financial predictability to property owners, and conservation to the grid.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          
+          <div class="card benefit-card">
+            <div class="benefit-check-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="benefit-content">
+              <h3>More Transparent Electricity Billing</h3>
+              <p>
+                Every kilowatt-hour is calculated and displayed clearly. Both tenant and owner have proof of exact consumption.
+              </p>
+            </div>
+          </div>
+
+          <div class="card benefit-card">
+            <div class="benefit-check-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="benefit-content">
+              <h3>Easier Tracking of Individual AC Consumption</h3>
+              <p>
+                Isolates the single most energy-hungry appliance in the property so you never have to guess who used the power.
+              </p>
+            </div>
+          </div>
+
+          <div class="card benefit-card">
+            <div class="benefit-check-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="benefit-content">
+              <h3>Helps Reduce Unnecessary Electricity Usage</h3>
+              <p>
+                When tenants pay per unit, they consciously switch off ACs before leaving rooms, reducing overall waste by up to 25%.
+              </p>
+            </div>
+          </div>
+
+          <div class="card benefit-card">
+            <div class="benefit-check-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="benefit-content">
+              <h3>Fewer Billing Disputes</h3>
+              <p>
+                Eliminates bitter month-end arguments over who left the AC on, maintaining peaceful relationships between owners and tenants.
+              </p>
+            </div>
+          </div>
+
+          <div class="card benefit-card">
+            <div class="benefit-check-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="benefit-content">
+              <h3>Affordable and Practical Energy Management</h3>
+              <p>
+                Cost-effective sub-meter hardware that installs quickly without requiring rewiring of the entire building.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE SAVINGS CALCULATOR (FOR HOSTELS & PGS)
+         ========================================================================== -->
+    <section id="calculator">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">Interactive Tool</div>
+          <h2 class="section-title">Hostel & PG Energy Cost Estimator</h2>
+          <p class="section-subtitle">
+            Simulate how much electricity your property consumes and see the potential waste eliminated with individual prepaid sub-metering.
+          </p>
+        </div>
+
+        <div class="calculator-box">
+          <div class="calc-grid">
+            
+            <!-- Controls -->
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label for="calc-rooms">
+                  <span>Number of AC Rooms</span>
+                  <span id="val-calc-rooms" class="calc-val-display">20 Rooms</span>
+                </label>
+                <input type="range" id="calc-rooms" class="calc-slider" min="5" max="80" step="1" value="20">
+              </div>
+
+              <div class="calc-input-group">
+                <label for="calc-hours">
+                  <span>Average Daily AC Runtime per Room</span>
+                  <span id="val-calc-hours" class="calc-val-display">8 Hrs/Day</span>
+                </label>
+                <input type="range" id="calc-hours" class="calc-slider" min="2" max="18" step="1" value="8">
+              </div>
+
+              <div class="calc-input-group">
+                <label for="calc-tariff">
+                  <span>Electricity Tariff Rate (₹ per kWh)</span>
+                  <span id="val-calc-tariff" class="calc-val-display">₹9.0 / kWh</span>
+                </label>
+                <input type="range" id="calc-tariff" class="calc-slider" min="6" max="15" step="0.5" value="9.0">
+              </div>
+
+              <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">
+                *Based on standard 1.5-ton AC power draw (~1.4 kW) and average 30-day operating cycle.
+              </p>
+            </div>
+
+            <!-- Dynamic Outputs -->
+            <div class="calc-results-card">
+              <div class="result-item">
+                <span class="result-title">Monthly Total AC Consumption</span>
+                <span id="res-total-units" class="result-number">6,720 kWh</span>
+              </div>
+              <div class="result-item">
+                <span class="result-title">Estimated Monthly AC Electricity Bill</span>
+                <span id="res-total-bill" class="result-number">₹60,480</span>
+              </div>
+              <div class="result-item">
+                <span class="result-title">Fair Per-Room Cost</span>
+                <span id="res-per-room" class="result-number">₹3,024</span>
+              </div>
+              <div class="result-item">
+                <span class="result-title">Estimated Wastage Eliminated with Prepaid Control</span>
+                <span id="res-savings" class="result-number highlight">~ ₹13,306/mo</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 9: PRICING
+         ========================================================================== -->
+    <section id="pricing" class="section-dark">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">Indicative Price</div>
+          <h2 class="section-title">Transparent Pricing</h2>
+          <p class="section-subtitle">
+            Affordable hardware designed to offer rapid return on investment for student accommodations and landlords.
+          </p>
+        </div>
+
+        <div class="pricing-wrapper">
+          <div class="card pricing-card">
+            <span class="pricing-badge">Indicative Product Price</span>
+            
+            <div class="price-display">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">5,000</span>
+              <span class="price-unit">/ unit</span>
+            </div>
+
+            <div class="price-disclaimer-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span>Estimated price that may change based on production volume and components.</span>
+            </div>
+
+            <p style="font-size: 0.95rem; color: var(--text-muted); max-width: 480px; margin: 0 auto;">
+              Complete hardware package for one air conditioner sub-metering line.
+            </p>
+
+            <ul class="pricing-features-list">
+              <li>
+                <span class="icon-check">✓</span>
+                <span>ESP32-powered smart sub-meter controller</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span>High-precision PZEM-004T energy measurement unit</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span>On-device color TFT display module</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span>Heavy-duty 30A circuit relay for prepaid control</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span>Access to the NXT IoT online monitoring interface</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span>Standard technical wiring & installation documentation</span>
+              </li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary btn-lg" style="width: 100%;">
+              Inquire for Pilot Deployment
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 10: ABOUT US
+         ========================================================================== -->
+    <section id="about">
+      <div class="container">
+        
+        <div class="about-card">
+          <div style="display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.8rem; flex-wrap: wrap;">
+            <img src="assets/images/logo.jpg" alt="NXT Smart Energy Solutions" style="width: 68px; height: 68px; border-radius: 50%; border: 2px solid var(--electric-blue); box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);">
+            <div>
+              <div class="badge" style="margin-bottom: 0.3rem;">Official Startup Identity</div>
+              <h3 style="font-size: 1.45rem; color: #fff; margin: 0;">NXT Smart Energy Solutions</h3>
+            </div>
+          </div>
+          
+          <blockquote class="about-quote">
+            “NXT Smart Energy Solutions aims to make electricity monitoring smarter, simpler, and more transparent through affordable IoT technology.”
+          </blockquote>
+
+          <p>
+            We are an early-stage startup dedicated to solving ground-level energy distribution challenges. In Indian student cities and shared accommodations, air conditioners represent the largest share of summer electricity bills, yet they remain untracked at the individual room level. 
+          </p>
+
+          <p style="margin-top: 1rem;">
+            By integrating cost-effective microcontrollers, industrial-grade energy sensors, and transparent prepaid cloud logic, NXT Smart Energy Solutions empowers both property owners and residents with fairness, peace of mind, and measurable energy conservation.
+          </p>
+
+          <div class="about-grid-details">
+            <div class="about-detail-item">
+              <h4>Targeted Focus</h4>
+              <p>Specifically engineered for AC sub-metering in hostels, PGs, and shared rental properties.</p>
+            </div>
+            <div class="about-detail-item">
+              <h4>Fairness First</h4>
+              <p>Pay strictly for what you consume, eliminating flat-split arguments and disputes.</p>
+            </div>
+            <div class="about-detail-item">
+              <h4>Clean Tech Alignment</h4>
+              <p>Promotes responsible electricity usage and energy efficiency aligned with sustainable development goals.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 11: CONTACT US
+         ========================================================================== -->
+    <section id="contact" class="section-dark">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge">Get In Touch</div>
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-subtitle">
+            Have questions about our IoT sub-meter, pilot installations, or partnership opportunities? Reach out to us.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Details Panel -->
+          <div class="contact-info-panel">
+            
+            <div class="contact-card-item">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4>Email Us</h4>
+                <p><a href="mailto:contact@nxtsmartenergy.com">contact@nxtsmartenergy.com</a></p>
+                <span class="placeholder-note">[Editable Placeholder: Update with your official email]</span>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>Call / WhatsApp</h4>
+                <p><a href="tel:+916305889935" style="font-weight: 600; color: #fff;">+91 63058 89935</a></p>
+                <div style="margin-top: 0.35rem;">
+                  <a href="https://wa.me/916305889935?text=Hello%20NXT%20Smart%20Energy%20Solutions,%20I%20am%20interested%20in%20your%20IoT%20AC%20Sub-Meter" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" style="padding: 0.35rem 0.8rem; font-size: 0.82rem; border-color: rgba(16, 185, 129, 0.4); color: #10b981;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                    Chat on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4>Presentation Platforms</h4>
+                <p>Wadhwani Foundation Entrepreneurship Program • Startup Incubator</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            
+            <div id="contact-success-banner" class="form-success-banner"></div>
+
+            <form id="startup-contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Your Full Name *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Manoj Surya" required>
+                <div class="form-error-msg">Please enter your name (at least 2 characters).</div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="name@domain.com" required>
+                <div class="form-error-msg">Please enter a valid email address.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-role">I Am A *</label>
+                <select id="contact-role" class="form-control">
+                  <option value="hostel_owner">Hostel / PG Owner</option>
+                  <option value="tenant">Student / Tenant</option>
+                  <option value="investor">Investor / Wadhwani Mentor</option>
+                  <option value="commercial">Apartment / Office Manager</option>
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Your Message / Inquiry *</label>
+                <textarea id="contact-message" class="form-control" placeholder="Tell us about your property, how many AC rooms you have, or your questions about our solution..." required></textarea>
+                <div class="form-error-msg">Please enter your message (at least 10 characters).</div>
+              </div>
+
+              <button type="submit" id="btn-submit-contact" class="btn btn-primary btn-lg" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Send Message
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 12: FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo" style="margin-bottom: 0.6rem;">
+            <img src="assets/images/logo.jpg" alt="NXT Smart Energy Solutions Logo" class="footer-logo-img">
+            <div class="brand-name">
+              <span class="brand-name-main">NXT SMART</span>
+              <span class="brand-name-sub">Energy Solutions</span>
+            </div>
+          </a>
+          <p>
+            Affordable IoT-based prepaid AC sub-metering for hostels, PGs, and shared rental properties.
+          </p>
+          <div style="margin-top: 0.6rem; font-size: 0.9rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.45rem;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--electric-blue)" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>Phone:</span>
+            <a href="tel:+916305889935" style="color: var(--electric-blue); font-weight: 600;">+91 63058 89935</a>
+          </div>
+          <div class="footer-tagline-quote">
+            “Smart Energy. Fair Billing. Better Control.”
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#problem">The Problem</a>
+            <a href="#solution">Our Solution</a>
+            <a href="#features">Key Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#technology">Technology Used</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Information</h4>
+          <div class="footer-links">
+            <a href="#audience">Who Can Use It</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#calculator">Savings Calculator</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="current-year">2026</span> NXT Smart Energy Solutions. All rights reserved.
+        </div>
+        <div>
+          Designed for Presentation to Customers, Investors & Wadhwani Foundation.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL 1: INTERACTIVE PREPAID RECHARGE SIMULATOR
+       ========================================================================== -->
+  <div id="recharge-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-recharge-title">
+    <div class="modal-container">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <h3 id="modal-recharge-title" class="modal-title">Simulate Prepaid Recharge</h3>
+      <p class="modal-subtitle">
+        Select or enter an amount to test real-time credit addition on the simulated AC Sub-Meter display.
+      </p>
+
+      <div class="recharge-presets">
+        <div class="preset-chip" data-amount="200">₹200</div>
+        <div class="preset-chip active" data-amount="500">₹500</div>
+        <div class="preset-chip" data-amount="1000">₹1,000</div>
+      </div>
+
+      <div class="form-group">
+        <label for="recharge-amount-input">Amount (INR ₹)</label>
+        <input type="number" id="recharge-amount-input" class="form-control" value="500" min="50" max="5000">
+      </div>
+
+      <button id="btn-confirm-recharge" class="btn btn-primary" style="width: 100%;">
+        Confirm Simulated Recharge
+      </button>
+
+      <p style="font-size: 0.72rem; color: var(--text-dim); text-align: center; margin-top: 0.8rem;">
+        *Interactive demonstration only. No real money or payment gateway involved.
+      </p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: WADHWANI FOUNDATION & INVESTOR EXECUTIVE SUMMARY
+       ========================================================================== -->
+  <div id="pitch-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="pitch-modal-title">
+    <div class="modal-container" style="max-width: 680px; max-height: 88vh; overflow-y: auto;">
+      <button id="pitch-modal-close" class="modal-close-btn" aria-label="Close pitch modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+        <img src="assets/images/logo.jpg" alt="NXT Logo" style="width: 52px; height: 52px; border-radius: 50%; border: 2px solid var(--electric-blue); box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);">
+        <div>
+          <div class="badge" style="margin-bottom: 0.2rem; font-size: 0.75rem;">Executive Briefing</div>
+          <h3 id="pitch-modal-title" class="modal-title" style="font-size: 1.35rem; margin: 0;">NXT Smart Energy Solutions</h3>
+        </div>
+      </div>
+      <p class="modal-subtitle">
+        Startup Summary for Mentors, Investors & Wadhwani Foundation Reviewers.
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 1.2rem; font-size: 0.95rem; color: var(--text-secondary);">
+        <div style="background: rgba(6, 11, 24, 0.7); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--electric-blue);">
+          <strong style="color: #fff;">The Core Problem:</strong><br>
+          Shared living accommodations (Hostels, PGs, co-living) typically rely on a single main electricity meter. With air conditioners drawing 80%+ of peak electricity, flat splitting triggers severe billing friction, unpaid utility charges for owners, and massive energy wastage.
+        </div>
+
+        <div style="background: rgba(6, 11, 24, 0.7); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--emerald-green);">
+          <strong style="color: #fff;">Our Proposition:</strong><br>
+          An IoT-based sub-meter mounted directly on each room’s AC circuit. Provides real-time voltage/current/kWh telemetry, automatic rupee deduction from a prepaid wallet, on-device TFT screen for transparency, and automated relay cut-off on zero balance.
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div style="background: rgba(14, 25, 53, 0.8); padding: 0.8rem; border-radius: 8px;">
+            <div style="font-size: 0.8rem; color: var(--text-muted);">Target Price Point</div>
+            <div style="font-size: 1.2rem; font-weight: 700; color: var(--electric-blue);">₹5,000 / unit</div>
+            <div style="font-size: 0.75rem; color: var(--text-dim);">Indicative estimate</div>
+          </div>
+          <div style="background: rgba(14, 25, 53, 0.8); padding: 0.8rem; border-radius: 8px;">
+            <div style="font-size: 0.8rem; color: var(--text-muted);">Expected Power Saved</div>
+            <div style="font-size: 1.2rem; font-weight: 700; color: var(--emerald-green);">20% - 25%</div>
+            <div style="font-size: 0.75rem; color: var(--text-dim);">Wasted runtime eliminated</div>
+          </div>
+        </div>
+
+        <div style="background: rgba(6, 11, 24, 0.7); padding: 1rem; border-radius: 8px;">
+          <strong style="color: #fff;">Target Audience:</strong>
+          Hostel owners, PG accommodation managers, student tenants, rental flats, and co-working spaces across India.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
